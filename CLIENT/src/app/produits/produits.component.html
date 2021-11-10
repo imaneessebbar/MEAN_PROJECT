@@ -1,0 +1,33 @@
+
+<div *ngIf="!(user|async)" class="container">
+        <div class="row"> 
+                <div class="col-4 col-md-4" *ngFor="let p of produits">
+                        <div class="col-md" class="card" style="width: 18rem;">
+                                <img class="card-img-top" width="150px" src="../../assets/images/placeholder-imagejpg" alt="Card image cap">
+                                <div class="card-body">
+                                        <h5 class="card-title"><b> {{p.nom}} </b></h5>
+                                        <p class="card-text">Type : <i> {{p.type}} </i></p>
+                                        <p class="card-text">Produit de chez : <i> {{p.marque}} </i></p>
+                                        <a routerLink="/membres/connexion" class="btn btn-primary">  Ajouter au panier  </a>
+                                </div>
+                        </div> 
+                        <br>
+                </div>
+        </div>       
+</div>
+<div *ngIf="(user|async)" class="container">
+        <div class="row"> 
+                <div class="col-4 col-md-4" *ngFor="let p of produits">
+                        <div class="col-md" class="card" style="width: 18rem;">
+                                <img class="card-img-top" width="150px" src="../../assets/images/placeholder-imagejpg" alt="Card image cap">
+                                <div class="card-body">
+                                        <h5 class="card-title"><b> {{p.nom}} </b></h5>
+                                        <p class="card-text">Type : <i> {{p.type}} </i></p>
+                                        <p class="card-text">Produit de chez : <i> {{p.marque}} </i></p>
+                                        <a (click) = 'ajout(p)'  class="btn btn-primary">  Ajouter au panier   </a>
+                                </div>
+                        </div> 
+                        <br>
+                </div>
+        </div>       
+</div>

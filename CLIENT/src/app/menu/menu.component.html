@@ -1,0 +1,39 @@
+<!--p>menu works!</p-->
+<div class="container">
+    <div class="position-fixed row"> 
+        <nav  class="navbar navbar-light "  style="background-color: #e3f2fd;">
+            <br>
+            <div class="container-fluid col-6 col-md-6">
+                <form class="form-inline my-2 my-lg-0 ">
+                    <input   #ref1 placeholder=" chercher ... " type="text" class="form-control" autofocus/> &nbsp;&nbsp;&nbsp;
+                    <button type="button" (click)="recherche(ref1.value)" class="btn btn-primary"> Chercher </button>  
+                </form> 
+            </div>   
+            
+                
+            <div style="float: right;" class="col-6 col-md-6 float-md-right">
+                
+                <div *ngIf="!(user|async)" class="navbar-nav">
+                    <div class="nav-item">
+                        <a class="btn btn-alert" routerLink="/membres/connexion">Se connecter</a>
+                    </div>
+                </div>
+                
+                    
+                    <div *ngIf="user|async" class="navbar-nav" >
+                        <a class="btn btn-alert" (click)="panier()" > Mon panier </a>   &nbsp;&nbsp;&nbsp;
+                        <a class="btn btn-alert" (click)="deconnexion()">Déconnexion de {{user|async}}</a>
+                    </div>
+                            <br>
+
+            </div>
+        </nav>
+    </div>
+    <div>
+        <a class="col-6 " [routerLink]="'/produits'"> Liste des produits </a>
+                &nbsp;&nbsp;&nbsp;
+        <a class="col-6 " [routerLink]="'/categories'"> Liste des categories </a>
+    </div>
+    <br> <br>
+</div>
+  

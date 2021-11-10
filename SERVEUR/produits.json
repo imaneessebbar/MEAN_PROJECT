@@ -1,0 +1,20 @@
+[
+
+    {"nom":"Deep Conditionner", "type":"cheveux", "prix":50, "marque":"shea moisture"},
+    {"nom":"Gel Twist and Lock", "type":"cheveux", "prix":50, "marque":"cantu"},
+    {"nom":"Shea Butter Shampooing", "type":"cheveux", "prix":45, "marque":"shea moisture"},
+
+    
+    {"nom":"Soin de jour", "type":"visage", "prix":15, "marque":"kiko"},
+    {"nom":"Soin de nuit", "type":"visage", "prix":50, "marque":"L'Oréal Paris"},
+    {"nom":"Soin anti-Age", "type":"visage", "prix":50, "marque":"L'Oréal Paris"},
+    {"nom":"Eau Micellaire", "type":"visage", "prix":25, "marque":"kiko"},
+    
+    {"nom":"Caféine", "type":"anti-fatigue", "prix":15, "marque":"marque1"},
+    {"nom":"Curcumine", "type":"anti-oxydant", "prix":30, "marque":"marque1"},
+    {"nom":"Quercétine", "type":"anti-oxydant", "prix":50, "marque":"marque2"},
+    {"nom":"Resvératrol", "type":"anti-oxydant", "prix":45, "marque":"marque2"},
+    {"nom":"Rhodiola rosea", "type":"anti-fatigue", "prix":25, "marque":"marque2"},
+    {"nom":"Coconut oil Shampooing Cream", "type":"cheveux", "prix":15, "marque":"cantu"},
+    {"nom":"Custard Definition & Brilliance", "type":"cheveux", "prix":25, "marque":"cantu"}
+]

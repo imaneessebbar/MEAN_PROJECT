@@ -1,0 +1,12 @@
+
+<div class="container">
+    <div class="row"> 
+            <div class="col-4 col-md-4" *ngFor="let c of cat">
+                    <div class="col-md" class="card" style="width: 18rem;">
+                        <h5 class="card-title"><b> {{c}} </b></h5>
+                        <a  [routerLink]="['../produits/', c]" class="btn btn-primary">Voir les produits</a>
+                    </div>
+                    <br>
+            </div>
+    </div>       
+</div>

@@ -1,0 +1,34 @@
+<!--p>connexion works!</p-->
+<div class="container row"> 
+    <div  class="d-flex flex-column  col-6 col-md-6 justify-content-center p-2" >
+        <h3>Connexion</h3>
+        <form style="width: 200px;" (ngSubmit)="onSubmit()" #inscriptionForm="ngForm">
+            <label> Email </label>
+            <input type="text" class="form-control" required [(ngModel)]="utilisateur['email']" name="email" />
+            <br>
+            <label> Mot de passe </label>
+            <input type="password" class="form-control" required [(ngModel)]="utilisateur['password']" name="password" />
+            <br>
+            <input type="submit" value="Se connecter"/>
+        </form>
+        <p> {{message}} </p>
+    </div>
+    <div  class="d-flex flex-column  col-6 col-md-6 justify-content-center p-2" >
+        <h3>Creer un compte</h3>
+        <form style="width: 200px;" (ngSubmit)="newUser()" #inscriptionForm="ngForm">
+            <label> Nom </label>
+            <input type="text" class="form-control" required [(ngModel)]="newuser['nom']" name="nom" />
+            <br>
+            <label> Prenom </label>
+            <input type="text" class="form-control" required [(ngModel)]="newuser['prénom']" name="prenom" />
+            <br>
+            <label> Email </label>
+            <input type="text" class="form-control" required [(ngModel)]="newuser['email']" name="email" />
+            <br>
+            <label> Mot de passe </label>
+            <input type="password" class="form-control" required [(ngModel)]="newuser['password']" name="password" />
+            <br>
+            <input type="submit" value="Creer un compte"/>
+        </form>
+    </div>
+</div>
